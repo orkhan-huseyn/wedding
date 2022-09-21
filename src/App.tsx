@@ -44,9 +44,9 @@ function navigate(lat: number, lng: number) {
 			protocol = 'maps://';
 		}
 		window.location =
-			protocol + 'maps.apple.com/maps?daddr=' + lat + ',' + lng + '&amp;ll=';
+			protocol + 'maps.apple.com/maps?place=' + lat + ',' + lng + '&amp;ll=';
 	} else {
-		window.open('http://maps.google.com?daddr=' + lat + ',' + lng + '&amp;ll=');
+		window.open('http://maps.google.com?place=' + lat + ',' + lng + '&amp;ll=');
 	}
 }
 
@@ -108,16 +108,18 @@ function App() {
 					hoverable
 					download
 				>
-					28 September, 2022
+					1 October, 2022
 					<Divider height='6px' />
-					At 6 o'clock
+					At 5 o'clock PM
 					<Divider height='6px' />
-					Real Wedding Palace
+					Imperial Restaurant
 				</Text>
 				<Text
-					size='xs'
-					marginTop='md'
-					onClick={() => navigate(40.40299013676123, 49.93715793016481)}
+					size='xs' // 40,68907° N, 46,38296° E
+					// 
+					// https://www.google.com/maps/place/%22Gold+Imperial%22+restoranı/@40.6894334,46.3830687,698m/data=!3m1!1e3!4m12!1m6!3m5!1s0x403f517da0c7bbc9:0x86d4aed2be8da797!2zSW1wZXJpYWwgxZ5hZGzEsXEgU2FyYXnEsQ!8m2!3d40.6907473!4d46.3841047!3m4!1s0x0:0xa5ed77983bea13ca!8m2!3d40.6889967!4d46.3828501
+					marginTop='md' // /@40.6894334,46.3830687,698m/data=!3m1!1e3!4m12!1m6!3m5!1s0x403f517da0c7bbc9:0x86d4aed2be8da797!2zSW1wZXJpYWwgxZ5hZGzEsXEgU2FyYXnEsQ!8m2!3d40.6907473!4d46.3841047!3m4!1s0x0:0xa5ed77983bea13ca!8m2!3d40.6889967!4d46.3828501
+					onClick={() => navigate(40.68907, 46.38296)}
 					hoverable
 					info
 				>
@@ -129,7 +131,7 @@ function App() {
 							animation: '1s ease 0s infinite alternate none running bounce',
 						}}
 					/>{' '}
-					47a Bakir Chobanzade
+					Taghi Arani, Ganja city
 				</Text>
 			</Box.Flex>
 		</ThemeProvider>
