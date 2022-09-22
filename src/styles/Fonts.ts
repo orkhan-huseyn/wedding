@@ -17,6 +17,7 @@ export const FontStyles = createGlobalStyle`
   font-style: normal;
   font-weight: normal;
   src: local('Sedan Regular'), url(${SedanRegularWOFF}) format('woff'), url(${SedanRegularTTF}) format('ttf');  
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +25,7 @@ export const FontStyles = createGlobalStyle`
   font-style: italic;
   font-weight: normal;
   src: local('Sedan Italic'), url(${SedanItalicWOFF}) format('woff'), url(${SedanItalicTTF}) format('ttf');
+  font-display: swap;
 }
 
 @font-face {
@@ -31,13 +33,14 @@ export const FontStyles = createGlobalStyle`
   font-style: normal;
   font-weight: normal;
   src: local('Poppins Regular'), url(${PoppinsRegularWOFF}) format('woff'), url(${PoppinsRegularTTF}) format('ttf');
+  font-display: swap;
 }
-
 
 @font-face {
   font-family: 'Poppins';
   font-style: italic;
   font-weight: normal;
   src: local('Poppins Italic'), url(${PoppinsItalicWOFF}) format('woff'), url(${PoppinsItalicTTF}) format('ttf');
+  font-display: swap;
 }
 `;
