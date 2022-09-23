@@ -38,7 +38,6 @@ function App() {
 				direction='column'
 				maxWidth='477px'
 				minWidth='450px'
-				// minWidth='415px'
 				minHeight='680px'
 				maxHeight='750px'
 				fillAvailable
