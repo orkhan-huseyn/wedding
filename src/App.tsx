@@ -71,7 +71,7 @@ function App() {
 						borderBottom: `1px solid ${colors.brown}`,
 					}}
 				>
-					Gulnishan &amp; Orkhan
+					Orkhan &amp; Gulnishan
 				</Text>
 
 				<Text
