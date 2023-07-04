@@ -71,7 +71,7 @@ function App() {
 						borderBottom: `1px solid ${colors.brown}`,
 					}}
 				>
-					Aytaj &amp; Aykhan
+					Gulnishan &amp; Orkhan
 				</Text>
 
 				<Text
@@ -84,9 +84,9 @@ function App() {
 					hoverable
 					download
 				>
-					1 October, 2022
+					15 July, 2023
 					<Divider height='6px' />
-					At 5 o'clock PM
+					At 6 o'clock PM
 					<Divider height='6px' />
 					Imperial Restaurant
 				</Text>
